@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>叶素康 - Java开发工程师</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-brand">叶素康</h1>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link" data-key="nav-about">关于我</a></li>
+                <li><a href="#experience" class="nav-link" data-key="nav-experience">工作经历</a></li>
+                <li><a href="#projects" class="nav-link" data-key="nav-projects">项目经历</a></li>
+                <li><a href="#skills" class="nav-link" data-key="nav-skills">专业技能</a></li>
+                <li><a href="#contact" class="nav-link" data-key="nav-contact">联系方式</a></li>
+            </ul>
+            <div class="language-switch">
+                <button class="lang-btn active" data-lang="zh">中</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主页面 -->
+    <section class="hero" id="about">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title glow-text" data-key="name">叶素康</h1>
+                <h2 class="hero-subtitle" data-key="position">Java开发工程师</h2>
+                <p class="hero-description">
+                    <i class="fas fa-briefcase"></i> <span data-key="experience">6年工作经验</span> | 
+                    <i class="fas fa-map-marker-alt"></i> <span data-key="location">苏州</span>
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary" data-key="contact-me">联系我</a>
+                    <a href="叶素康-Java开发.pdf" class="btn btn-secondary" download>
+                        <i class="fas fa-download"></i> <span data-key="download-resume">下载简历</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 教育背景 -->
+    <section class="education">
+        <div class="container">
+            <h2 class="section-title" data-key="education-title">教育背景</h2>
+            <div class="education-item">
+                <div class="education-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="education-content">
+                    <h3 data-key="university">徐州工程学院</h3>
+                    <p class="degree" data-key="degree">本科 · 软件工程</p>
+                    <p class="period" data-key="study-period">2015 - 2019</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 工作经历 -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <h2 class="section-title" data-key="experience-title">工作经历</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date" data-key="work1-period">2022.07 - 至今</div>
+                    <div class="timeline-content">
+                        <h3 data-key="work1-company">上海爱湃斯科技有限公司苏州分公司</h3>
+                        <h4 data-key="work1-position">Java开发工程师</h4>
+                        <div class="work-content">
+                            <h5 data-key="work-duties">工作内容：</h5>
+                            <ul>
+                                <li>开发iPaaS基础工程模块以及部分iPaaS微服务模块</li>
+                                <li>编写iPaaS基础工程ipaas-parent中的ipaas-idempotent、ipaas-cache子工程</li>
+                                <li>编写iPaaS平台中的ipaas-gateway、ipaas-dfa-manager微服务模块</li>
+                                <li>负责维护iPaaS Saas线上环境相关服务稳定；维护iPaaS私有化部署版本相关服务稳定</li>
+                            </ul>
+                            <h5>主要成就：</h5>
+                            <ul>
+                                <li>ipaas-idempotent工程是一个分布式幂等组件，通过注解方式集成Redis实现声明式的接口幂等性控制</li>
+                                <li>ipaas-cache工程实现了iPaaS缓存解决方案，自定义Caffeine本地缓存管理器以及Redisson缓存管理器</li>
+                                <li>ipaas-gateway为基于Spring Cloud Gateway构建的iPaaS微服务网关系统</li>
+                                <li>ipaas-dfa-manager为节点网服务管理调度系统</li>
+                                <li>基于Jenkins为本项目提供CI/CD解决方案</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2019.07 - 2022.07</div>
+                    <div class="timeline-content">
+                        <h3>江苏国泰新点软件有限公司</h3>
+                        <h4>Java开发工程师</h4>
+                        <div class="work-content">
+                            <h5>工作内容：</h5>
+                            <ul>
+                                <li>维护及部署公司常用中间件：nginx、rocketMQ、redis、NFS、keepalived等</li>
+                                <li>编写SftpServer并提供高可用方案，基于开源数据库连接工具DBeaver进行二次修改</li>
+                                <li>对开源工具DBeaver进行个性化开发</li>
+                                <li>编写及维护公司docker运维平台eCloud</li>
+                            </ul>
+                            <h5>主要成就：</h5>
+                            <ul>
+                                <li>编写SftpServer代码，提供高可用方案，编写启动shell脚本</li>
+                                <li>修改开源数据库连接工具DBeaver代码，增加国产化驱动、安全模式等新功能</li>
+                                <li>开发docker运维平台eCloud web管理端以及外部插件</li>
+                                <li>liquibase组件国产化数据库适配</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 项目经历 -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title" data-key="projects-title">项目经历</h2>
+            <div class="project-grid">
+                <!-- iPaaS平台 -->
+                <div class="project-card glow-border">
+                    <div class="project-header">
+                        <h3>iPaaS平台</h3>
+                        <span class="project-date">2022.07 - 至今</span>
+                    </div>
+                    <div class="project-role">角色：Java开发</div>
+                    <div class="project-description">
+                        <p><strong>平台描述：</strong>iPaaS（Integration Platform as a Service）是一个使用Spring Cloud Alibaba开发的SaaS多租户集成平台，提供系统集成解决方案。</p>
+                        <p><strong>技术栈：</strong>SpringBoot + SpringCloudAlibaba + Mybatis + MySQL + Redis + MongoDB + RocketMQ + Jenkins + Docker + K8S</p>
+                        <p><strong>负责模块：</strong></p>
+                        <ul>
+                            <li><strong>ipaas-gateway：</strong>微服务网关实例，提供请求路由、负载均衡、认证鉴权、监控日志等能力</li>
+                            <li><strong>ipaas-dfa-manager：</strong>节点网服务管理调度系统，负责服务的管理、部署、监控和运行时控制</li>
+                        </ul>
+                        <p><strong>项目成果：</strong></p>
+                        <ul>
+                            <li>支持单个节点网服务100+任务的执行与排队</li>
+                            <li>通过任务日志回放功能快速定位错误节点</li>
+                            <li>节点网服务应用于金融、制造等多个行业</li>
+                        </ul>
+                        <p class="demo-link">
+                            <i class="fas fa-link"></i> 演示地址：
+                            <a href="https://ipaas.lab.clickpaas.com" target="_blank">https://ipaas.lab.clickpaas.com</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- DBeaver二次开发 -->
+                <div class="project-card glow-border">
+                    <div class="project-header">
+                        <h3>DBeaver二次开发</h3>
+                        <span class="project-date">2019.10 - 2021.10</span>
+                    </div>
+                    <div class="project-role">角色：Java开发</div>
+                    <div class="project-description">
+                        <p>基于开源数据库连接工具DBeaver进行二次开发，增加的功能包括：</p>
+                        <ul>
+                            <li>驱动内置、常用客户端软件内置</li>
+                            <li>SQL记录功能</li>
+                            <li>国产数据库支持（DM、人大金仓、瀚高、神通等）</li>
+                            <li>安全模式（数据回收站功能）</li>
+                            <li>增强的备份还原功能</li>
+                            <li>数据源比较、数据迁移</li>
+                            <li>插件机制扩展</li>
+                            <li>多用户支持</li>
+                        </ul>
+                        <p class="demo-link">
+                            <i class="fab fa-github"></i> 项目地址：
+                            <a href="https://gitee.com/surive/DBeaverRelease" target="_blank">https://gitee.com/surive/DBeaverRelease</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pass运维平台eCloud -->
+                <div class="project-card glow-border">
+                    <div class="project-header">
+                        <h3>Pass运维平台eCloud</h3>
+                        <span class="project-date">2021.10 - 2022.07</span>
+                    </div>
+                    <div class="project-role">角色：Java开发</div>
+                    <div class="project-description">
+                        <p><strong>项目描述：</strong>eCloud是一个综合性Pass运维平台，提供容器部署编排、持续集成、资源管理、服务监控等功能。</p>
+                        <p><strong>技术栈：</strong>Springboot、mybatis、redis、jenkins、docker、filebeat、logstash、gotty</p>
+                        <p><strong>负责模块：</strong></p>
+                        <ul>
+                            <li>部署编排模块：负责Docker容器的创建、修改、删除</li>
+                            <li>资源管理模块：管理注册进Pass控制台的业务服务器</li>
+                            <li>Server端ecloud-schedule组件开发</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- liquibase国产数据库支持 -->
+                <div class="project-card glow-border">
+                    <div class="project-header">
+                        <h3>liquibase国产数据库支持</h3>
+                        <span class="project-date">开源项目</span>
+                    </div>
+                    <div class="project-role">角色：开源贡献者</div>
+                    <div class="project-description">
+                        <p>在原生liquibase基础上添加了以下功能：</p>
+                        <ul>
+                            <li>支持常见国产库：kingbase、DM、瀚高、神通数据库</li>
+                            <li>支持存储过程、触发器比较</li>
+                            <li>优化异构数据库比较功能，大幅减少比较时间</li>
+                        </ul>
+                        <p class="demo-link">
+                            <i class="fab fa-github"></i> 项目地址：
+                            <a href="https://github.com/Saorionesan/liquibase-core" target="_blank">https://github.com/Saorionesan/liquibase-core</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 专业技能 -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title" data-key="skills-title">专业技能</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> <span data-key="skill-programming">编程语言</span></h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Java SE</span>
+                        <span class="skill-tag">多线程</span>
+                        <span class="skill-tag">集合框架</span>
+                        <span class="skill-tag">IO操作</span>
+                        <span class="skill-tag">JVM</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-layer-group"></i> <span data-key="skill-frameworks">框架技术</span></h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Spring</span>
+                        <span class="skill-tag">Spring Boot</span>
+                        <span class="skill-tag">Spring Cloud</span>
+                        <span class="skill-tag">MyBatis</span>
+                        <span class="skill-tag">MyBatis Plus</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> <span data-key="skill-database">数据库</span></h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Redis</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">SQL优化</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> <span data-key="skill-middleware">中间件</span></h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">RocketMQ</span>
+                        <span class="skill-tag">Nginx</span>
+                        <span class="skill-tag">Keepalived</span>
+                        <span class="skill-tag">NFS</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-cloud"></i> <span data-key="skill-devops">DevOps</span></h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">Jenkins</span>
+                        <span class="skill-tag">CI/CD</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> <span data-key="skill-tools">工具</span></h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Shell脚本</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Maven</span>
+                        <span class="skill-tag">IDEA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title" data-key="contact-title">联系方式</h2>
+            <div class="contact-content">
+                <p data-key="contact-description">如果您对我的经历感兴趣，欢迎与我联系！</p>
+                <div class="contact-info">
+                    <a href="mailto:yesukang@example.com" class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span data-key="send-email">发送邮件</span>
+                    </a>
+                    <a href="#" class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span data-key="phone-contact">电话联系</span>
+                    </a>
+                    <a href="#" class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <span data-key="linkedin">LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 叶素康. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
